@@ -19,7 +19,7 @@ const DashboardSection = () => {
   const [openLoans, setOpenLoans] = useState(true);
   const [openCurrency, setOpenCurrency] = useState(true);
   return (
-    <div className="bg-[#252626] rounded-2xl text-white min-h-[80vh] p-4 mb-20 space-y-6">
+    <div className="bg-[#252626] dashboard rounded-2xl text-white min-h-[80vh] p-4 mb-20 space-y-6">
       <div>
         <div
           className="flex justify-between"
@@ -94,11 +94,11 @@ const DashboardSection = () => {
               <div key={item.label} className="flex justify-between items-center">
                 <div className="flex items-center gap-2 text-sm">
                   <div className="bg-[#B2D0CE] text-black p-1 rounded-md">{item.icon}</div>
-                  {item.label}
+                 <p className='text-[15px] font-normal'> {item.label}</p>
                 </div>
                 <div className='flex items-center gap-x-5'>
-                   <div className="text-sm">{item.buy}</div>
-                <div className="text-sm">{item.sell}</div>
+                   <div className="className='text-[15px] font-normal">{item.buy}</div>
+                <div className="text-[15px] font-normal">{item.sell}</div>
                 </div>
               </div>
             ))}
@@ -118,11 +118,11 @@ const DashboardSection = () => {
                   <div className="bg-[#B2D0CE] text-black p-1 rounded-md">
                     <img src={group} alt="" />
                   </div>
-                  {item.label}
+                 <p className="text-[15px] font-normal"> {item.label}</p>
                 </div>
                 <div className='flex items-center gap-x-5'>
-                   <div className="text-sm">{item.buy}</div>
-                    <div className="text-sm">{item.sell}</div>
+                   <div className="text-[15px] font-normal">{item.buy}</div>
+                    <div className="text-[15px] font-normal">{item.sell}</div>
                 </div>
               </div>
             ))}

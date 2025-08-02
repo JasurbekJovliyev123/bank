@@ -6,11 +6,12 @@ import search from './assets/images/back.png'
 import CardCarousel from './components/CardCarusel'
 import Finance from './components/Finance'
 import DashboardSection from './components/Dashboard'
+import circle from './assets/images/circle.png'
 function App() {
 
 
   return (
-    <div className='p-5 w-full h-full bg-black min-h-[100vh]'>
+    <div className='p-5 w-full relative -z-10 h-full bg-black min-h-[100vh]'>
       <div className='flex justify-between items-center mb-6'>
           <img className='w-8 h-8 rounded-full bg-' src={user} alt="user photo" />
           <p className='font-normal text-[18px] text-white'><span className='text-[#EEFC79] font-bold'>U</span>Bank</p>
@@ -31,6 +32,8 @@ function App() {
     </div>
        <DashboardSection />
       <Sidebar />
+
+      <img className='absolute bottom-8 left-0 -z-10 w-[800px] h-[300px]' src={circle} alt="" />
     </div>
   )
 }

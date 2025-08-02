@@ -14,3 +14,53 @@ export const finance = [
   { id: 3, title: 'Finance analysis', color:'#AA9EB7', img:icon3},
   { id: 4, title: 'Finance analysis', color:'#AA9EB7', img:icon3},
 ];
+
+export  const cards1 = [
+    {
+      id: 1,
+      type: 'VISA',
+      amount: '$ 5,566.55',
+      number: '**** **** **** 4552',
+      valid: 'VALID THRU',
+      date:' 12/22',
+      name: 'MARGO LEPSKI'
+    },
+    {
+      id: 2,
+      type: 'MASTERCARD',
+      amount: '$ 1,234.00',
+      number: '**** **** **** 7890',
+      valid: 'VALID THRU',
+      date:"05/24",
+      name: 'JOHN DOE'
+    },
+    {
+      id: 3,
+      type: 'AMEX',
+      amount: '$ 8,901.23',
+      number: '**** **** **** 1234',
+      valid: 'VALID THRU',
+      date:"09/23",
+      name: 'JANE SMITH'
+    }
+  ];
+import icon11 from '../assets/images/icon1.svg'
+import icon12 from '../assets/images/icon2.svg'
+export const transication=[
+  {
+    id:1,
+    imgUrl:icon11,
+    title:'Transfer',
+    subtitle:'Incoming transfer',
+    price:'+ $3,110',
+    color:'#F2FE8D'
+  },
+  {
+    id:2,
+    imgUrl:icon12,
+    title:'Health',
+    subtitle:'Pharmacy',
+    price:'- $312,9',
+    color:'#B2D0CE'
+  },
+]

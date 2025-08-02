@@ -1,5 +1,5 @@
-import React from 'react'
-import { createBrowserRouter,RouterProvider } from 'react-router'
+
+import { createBrowserRouter,RouterProvider } from 'react-router<i className="mdi mdi-domain-off:"></i>'
 import MainLayout from './layout/ManLayout'
 import Home from './Home'
 import UserCard from './pages/UserCard'

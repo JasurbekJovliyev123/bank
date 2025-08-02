@@ -10,8 +10,8 @@ const Finance = () => {
             key={card.id}
             className={`w-[100px] h-[100px] rounded-2xl p-3.5 bg-[#252626] flex-shrink-0 shadow-md transition `}
           >
-            <div style={{backgroundColor:card.color}} className={`p-2 w-8 h-8 rounded-2xl  mb-[12px] bg-[${card.color}]`}>
-               <img src={card.img} className='w-4 h-4' alt="" />
+            <div style={{backgroundColor:card.color}} className={`p-1 w-8 h-8 flex items-center justify-center rounded-2xl  mb-[12px] bg-[${card.color}]`}>
+               <img src={card.img} className='w-[22px] h-[22px]' alt="" />
             </div>
             <div className="text-[12px] text-white font-medium">{card.title}</div>
           </div>

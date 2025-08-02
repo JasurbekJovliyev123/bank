@@ -1,15 +1,15 @@
 import React from 'react'
 import { GoChevronLeft } from "react-icons/go";
 import Card from '../components/Cards';
-import { useNavigate } from 'react-router';
+// import { useNavigate } from 'react-router';
 import { IoIosArrowDown } from "react-icons/io";
 import { transication } from '../constans';
 const UserCard = () => {
-  const navigate=useNavigate()
+
   return (
     <div className='p-5 py-10 w-full relative  h-full pb-20 bg-black min-h-[100vh]'>
        <div className='flex items-center justify-between'>
-          <div onClick={()=>navigate(-1)} className='w-8 h-8 cursor-pointer rounded-full flex items-center justify-center bg-[#252626]'>
+          <div className='w-8 h-8 cursor-pointer rounded-full flex items-center justify-center bg-[#252626]'>
              <GoChevronLeft className='text-white w-5 h-5'/>
           </div>
           <p className='text-white text-[16px] font-medium'>Your cards</p>

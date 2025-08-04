@@ -64,3 +64,40 @@ export const transication=[
     color:'#B2D0CE'
   },
 ]
+
+
+import group1 from '../assets/images/group1.svg'
+import group2 from '../assets/images/group2.svg'
+import group3 from '../assets/images/group3.svg'
+import group4 from '../assets/images/group4.svg'
+
+export const group=[
+  {
+    id:1,
+    imgulr:group1,
+    title:'Outcoming transfer',
+    num:'3919 9399 0021 2003',
+    price:'- $ 45'
+  },
+  {
+    id:2,
+    imgulr:group2,
+    title:'Annual withdrawal of funds',
+    num:'3100 9201 0203 1930',
+    price:'- $ 79'
+  },
+  {
+    id:3,
+    imgulr:group3,
+    title:'Youtube',
+    num:'Annual withdrawal of funds',
+    price:'- $ 15'
+  },
+  {
+    id:4,
+    imgulr:group4,
+    title:'Outcoming transfer',
+    num:'Unsplash',
+    price:'- $ 15'
+  },
+]

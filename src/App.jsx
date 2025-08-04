@@ -3,6 +3,9 @@ import { createBrowserRouter,RouterProvider } from 'react-router-dom'
 import MainLayout from './layout/ManLayout'
 import Home from './Home'
 import UserCard from './pages/UserCard'
+import Login from './pages/Login'
+import MyBudget from './pages/Budjet'
+import Transfer from './pages/Transfer'
 const App = () => {
   const route=createBrowserRouter([
     {
@@ -16,6 +19,17 @@ const App = () => {
         {
           path:'/cards',
           element:<UserCard/>
+        }, {
+          path:'/login', 
+          element:<Login/>
+        }, 
+        {
+          path:'/budget',
+          element:<MyBudget/>
+        },
+        {
+          path:'/transfer',
+          element:<Transfer/>
         }
       ]
     }

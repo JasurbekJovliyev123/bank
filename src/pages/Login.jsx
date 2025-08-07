@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import deleticon from '../assets/images/x.svg'
+import back from '../assets/images/back.svg'
+import { numbers } from "../constans";
 const Login = () => {
   const [passcode, setPasscode] = useState("");
 
@@ -13,7 +14,7 @@ const Login = () => {
     setPasscode(passcode.slice(0, -1));
   };
 
-  const numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
+
 
   return (
     <div className="h-screen bg-[#252626] flex flex-col pb-24 items-center justify-between pt-4 px-4">
@@ -25,7 +26,7 @@ const Login = () => {
             <div
               key={i}
               className={`w-[10px] h-[10px] rounded-full ${
-                i < passcode.length ? "bg-white" : "bg-[#5C5762]"
+                i < passcode.length ? "bg-white" : "bg-[rgb(92,87,98)]"
               }`}
             ></div>
           ))}
@@ -33,13 +34,14 @@ const Login = () => {
       </div>
 
       <div className="grid grid-cols-3 gap-4 w-full max-w-xs mt-8">
-        {numbers.slice(0, 9).map((number) => (
+        {numbers.slice(0, 9).map((item) => (
           <button
-            key={number}
-            className="bg-[#363339] text-white w-[75px] h-[75px] cursor-pointer rounded-full text-[36px] font-normal"
-            onClick={() => handleDigitClick(number)}
+            key={item.num}
+            className="bg-[#363339] relative text-white w-[75px] h-[75px] cursor-pointer rounded-full text-[36px] font-normal"
+            onClick={() => handleDigitClick(item.num)}
           >
-            {number}
+             <p className="-mt-2.5 p-0">{item.num}</p>
+             {item.text && <span className="text-[10px] absolute bottom-2.5 left-1/2 -translate-x-1/2 m-0 p-0">{item.text}</span>}
           </button>
         ))}
         <div></div>
@@ -49,12 +51,7 @@ const Login = () => {
         >
           0
         </button>
-        <button
-          className="bg-[#363339] w-[75px] h-[75px] text-white text-[36px] rounded-full text-xl flex justify-center items-center"
-          onClick={handleDelete}
-        >
-          <img src={deleticon} alt="" />
-        </button>
+          <img src={back} onClick={handleDelete} className="mt-6 ml-6" alt="" />
       </div>
 
       <p className="text-[#F2FE8D] text-sm mt-4">Can not login?</p>

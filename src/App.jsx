@@ -32,7 +32,7 @@ const App = () => {
           element:<Transfer/>
         }
       ]
-    }
+    } 
   ])
   return <RouterProvider router={route}/>
 }

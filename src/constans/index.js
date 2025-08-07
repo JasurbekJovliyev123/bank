@@ -3,7 +3,7 @@ export const cards = [
   { id: 2, title: 'Savings Account', amount: '$5,566', gradient: 'linear-gradient(135deg, #FCFFDF, #F1FE87)', cardNo: '** 4552', bg: 'bg-yellow-200' },
   { id: 3, title: 'Investment', amount: '$3,210', gradient: 'linear-gradient(-135deg, #F2EFF4, #B8A9C6)', cardNo: '** 1234', bg: 'bg-green-200' },
 ];
-
+export const numbers = [{num:"1"}, {num:"2",text:"A B C"}, {num:"3",text:"D E F"}, {num:"4",text:"G H I"}, {num:"5",text:"J K L"}, {num:"6",text:"M N O"}, {num:"7",text:"P Q R S"}, {num:"8",text:"T U V"}, {num:"9",text:"W X Y Z"}, {num:"0"}];
 import icon1 from '../assets/images/Icon1.png'
 import icon2 from '../assets/images/Icon2.png'
 import icon3 from '../assets/images/Icon3.png'

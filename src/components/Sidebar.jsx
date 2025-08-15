@@ -15,7 +15,9 @@ const Sidebar = () => {
         <GoHome className="w-6 h-6" />
       </NavLink>
 
-      <HiOutlineShoppingBag className="text-white w-6 h-6" />
+      <NavLink className={({ isActive }) => isActive ? "text-[#F2FE8D]" : "text-white"} to={'/login'}>
+           <HiOutlineShoppingBag  className="text-white w-6 h-6" />
+      </NavLink>
 
       <NavLink
         to="/cards"
@@ -24,9 +26,15 @@ const Sidebar = () => {
         <TiCreditCard className="w-6 h-6" />
       </NavLink>
 
-      <PiChatTeardropDots className="text-white w-6 h-6" />
+      <NavLink to="/transfer"
+        className={({ isActive }) => isActive ? "text-[#F2FE8D]" : "text-white"}>
+          <PiChatTeardropDots className="text-white w-6 h-6" />
+      </NavLink>
 
-      <RiFileHistoryLine className="text-white w-6 h-6" />
+      <NavLink to="/budget"
+        className={({ isActive }) => isActive ? "text-[#F2FE8D]" : "text-white"}>
+          <RiFileHistoryLine className="text-white w-6 h-6" />
+      </NavLink>
     </footer>
   );
 };

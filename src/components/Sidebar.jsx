@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   return (
-    <footer className="flex justify-around py-6 z-0 bg-[#242325] left-0 fixed bottom-0 w-full rounded-t-2xl">
+    <footer className="flex justify-around py-6 z-0 backdrop-blur-[16px]  left-0 fixed bottom-0 w-full rounded-t-2xl">
       <NavLink
         to="/"
         className={({ isActive }) => isActive ? "text-[#F2FE8D]" : "text-white"}

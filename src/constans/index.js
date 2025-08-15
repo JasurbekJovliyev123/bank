@@ -4,9 +4,9 @@ export const cards = [
   { id: 3, title: 'Investment', amount: '$3,210', gradient: 'linear-gradient(-135deg, #F2EFF4, #B8A9C6)', cardNo: '** 1234', bg: 'bg-green-200' },
 ];
 export const numbers = [{num:"1"}, {num:"2",text:"A B C"}, {num:"3",text:"D E F"}, {num:"4",text:"G H I"}, {num:"5",text:"J K L"}, {num:"6",text:"M N O"}, {num:"7",text:"P Q R S"}, {num:"8",text:"T U V"}, {num:"9",text:"W X Y Z"}, {num:"0"}];
-import icon1 from '../assets/images/Icon1.png'
-import icon2 from '../assets/images/Icon2.png'
-import icon3 from '../assets/images/Icon3.png'
+import icon1 from '../assets/images/icon.svg'
+import icon2 from '../assets/images/Group.svg'
+import icon3 from '../assets/images/Group12.svg'
 
 export const finance = [
   { id: 1, title: 'My bonuses', color:'#F2FE8D', img:icon1},

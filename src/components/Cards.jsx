@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
-import logo from '../assets/images/logo.png';
-import cardImg from '../assets/images/card.png';
+import logo from '../assets/images/logo.svg';
+import cardImg from '../assets/images/image.svg';
 import { cards1 } from '../constans';
 
 const Card = () => {

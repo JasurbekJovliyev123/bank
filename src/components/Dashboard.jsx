@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import img from '../assets/images/credit.png'
-import group from '../assets/images/Group.png'
+import img from '../assets/images/credit.svg'
+// import group from '../assets/images/Group.png'
+import cardimg from '../assets/images/group123.svg'
 import {
   MdOutlineCreditCard,
   MdExpandMore,
@@ -116,7 +117,7 @@ const DashboardSection = () => {
               <div key={item.label} className="flex justify-between items-center">
                 <div className="flex items-center gap-2 text-sm">
                   <div className="bg-[#B2D0CE] text-black p-1 rounded-md">
-                    <img src={group} alt="" />
+                    <img src={cardimg} alt="" />
                   </div>
                  <p className="text-[15px] font-normal"> {item.label}</p>
                 </div>

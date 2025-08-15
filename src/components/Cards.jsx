@@ -55,7 +55,6 @@ const Card = () => {
   return (
     <div className="max-w-md mx-auto my-8 p-4">
       <div
-        style={{ backgroundImage: 'linear-gradient(135deg, #EDFC74, #F5FFA8)' }}
         className={`relative overflow-hidden w-[311px] rounded-xl shadow-lg text-white p-5 h-[184px] transition-transform duration-500`}
         style={{
           backgroundImage: 'linear-gradient(135deg, #EDFC74, #F5FFA8)',

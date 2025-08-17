@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import img from '../assets/images/credit.svg'
-// import group from '../assets/images/Group.png'
 import cardimg from '../assets/images/group123.svg'
 import {
   MdOutlineCreditCard,

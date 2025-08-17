@@ -1,6 +1,7 @@
 import React from 'react'
 import { GoChevronLeft } from "react-icons/go";
 import Card from '../components/Cards';
+
 // import { useNavigate } from 'react-router';
 import { IoIosArrowDown } from "react-icons/io";
 import { transication } from '../constans';

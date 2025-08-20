@@ -6,6 +6,7 @@ import UserCard from './pages/UserCard'
 import Login from './pages/Login'
 import MyBudget from './pages/Budjet'
 import Transfer from './pages/Transfer'
+import Message from './pages/Message'
 const App = () => {
   const route=createBrowserRouter([
     {
@@ -30,6 +31,10 @@ const App = () => {
         {
           path:'/transfer',
           element:<Transfer/>
+        },
+        {
+            path:'/chat',
+            element:<Message/>
         }
       ]
     } 

@@ -101,3 +101,13 @@ export const group=[
     price:'- $ 15'
   },
 ]
+
+export const messages = [
+  { id: 1, text: "Translation done", money:'$15', type: "sent" },
+  { id: 2, text: "You have been transferred", money:'$215', type: "received" },
+  { id: 3, text: "Translation done", money:'$26', type: "sent" },
+  { id: 4, text: "Translation done ",money:'$30', title:'I return the debt', type: "sent" },
+  { id: 5, text: "You have been transferred",money:'$25', type: "received" },
+  { id: 6, text: "You have been transferred",money:'$10', type: "received" },
+  { id: 7, text: "You have been transferred",money:'$15', type: "received" },
+];

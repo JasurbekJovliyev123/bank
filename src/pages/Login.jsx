@@ -10,8 +10,6 @@ const Login = () => {
     if (passcode.length < 6) {
       setPasscode(passcode + digit);
       setFloatingDigit(digit);
-
-      // 2 soniyadan keyin yo‘qoladi
       setTimeout(() => {
         setFloatingDigit(null);
       }, 2000);
@@ -30,7 +28,6 @@ const Login = () => {
         </p>
         <p className="text-white mt-18 text-[17px] font-normal">Enter Passcode</p>
         
-        {/* Floating digit animation */}
         {floatingDigit !== null && (
           <span
             className="absolute left-1/2 -translate-x-1/2 text-white text-[40px] font-bold animate-float"
@@ -79,7 +76,6 @@ const Login = () => {
 
       <p className="text-[#F2FE8D] text-sm mt-4">Can not login?</p>
 
-      {/* Animation styles */}
       <style>
         {`
           @keyframes floatUp {

@@ -5,12 +5,12 @@ import { cards } from '../constans';
 const CardCarousel = () => {
   return (
     <div className="overflow-x-auto scrollbar-hide">
-      <div className="flex gap-4  py-4 w-max">
+      <div className="flex gap-4 py-4 w-max">
         {cards.map((card) => (
           <div
            style={{ background: card.gradient }}
             key={card.id}
-            className={`w-[148px]  h-[170px] rounded-2xl py-6 px-4 ${card.bg} flex-shrink-0 shadow-md transition hover:scale-105 duration-300`}
+            className={`w-[148px]  h-[170px] rounded-2xl py-6 px-4 ${card.bg} flex-shrink-0 shadow-md transition duration-300`}
           >
             <img src={logo} className='w-10 h-5 mb-7' alt="" />
             <div className="mt-2 text-[12px] font-medium text-[#272A32]">{card.title}</div>

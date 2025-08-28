@@ -74,7 +74,7 @@ const Card = () => {
             }`}
             style={{ backfaceVisibility: 'hidden' }}
           >
-            {/* Old tomoni */}
+       
             {!flipped && (
               <>
                 <div className="flex justify-between items-start">

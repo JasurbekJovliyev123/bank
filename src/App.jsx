@@ -7,6 +7,7 @@ import Login from './pages/Login'
 import MyBudget from './pages/Budjet'
 import Transfer from './pages/Transfer'
 import Message from './pages/Message'
+import PaymentSucces from './pages/Congluration'
 const App = () => {
   const route=createBrowserRouter([
     {
@@ -35,6 +36,10 @@ const App = () => {
         {
             path:'/chat',
             element:<Message/>
+        },
+        {
+          path:'/success',
+          element:<PaymentSucces/>
         }
       ]
     } 
